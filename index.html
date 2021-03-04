@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Региональная молодёжная Лаборатория театра и фольклора</title>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+    <header class="header absolute">
+        <div class="wrapper-2">
+            <div class="header__colum">
+                <a href="/" class="header__logo logo">
+                    <img class="logo__image" src="images/logo.png" alt="Региональная молодёжная Лаборатория театра и фольклора" width="115" height="155">
+                </a>
+            </div>
+            <div class="wrapper">
+                <nav class="header__top-menu top-menu">
+                    <ul class="top-menu__list">
+                        <li class="top-menu__item"><a href="#" class="top-menu__link">О Лаборатории</a></li>
+                        <li class="top-menu__item"><a href="#" class="top-menu__link">Проекты</a></li>
+                        <li class="top-menu__item"><a href="#" class="top-menu__link">Актёры</a></li>
+                        <li class="top-menu__item"><a href="#" class="top-menu__link">Партнёры</a></li>
+                        <li class="top-menu__item"><a href="#" class="top-menu__link">Новости</a></li>
+                        <li class="top-menu__item"><a href="#" class="top-menu__link">Контакты</a></li>
+                        <li class="top-menu__item"><a href="#" class="top-menu__link">Регистрация на мастер-класс</a></li>
+                    </ul>
+                </nav>
+                <form name="search" action="#" method="get" class="header__search-form search-form">
+                    <div class="search-form__icon icon-search"></div>
+                    <input value="" name="s" class="search-form__input" type="text" placeholder="Поиск по сайту" autocomplete="off">     
+                </form>
+                <div class="header__network network">
+                    <a href="#" class="network__link"><span class="network__icon icon-vk"></span></a>
+                    <a href="#" class="network__link"><span class="network__icon icon-instagram"></span></a>
+                    <a href="#" class="network__link"><span class="network__icon icon-facebook"></span></a>
+                </div>
+            </div>
+            <div class="header__colum">
+                <a href="#" class="header__poster-button poster-button">
+                    <div class="poster-button__icon icon-calendar"></div>
+                    <div class="poster-button__text">Афиша</div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="slider-top">
+        <div class="slider-top__container swiper-container">
+            <div class="swiper-wrapper">
+                <div class="slider-top__item swiper-slide">
+                    <div class="slider-top__video">
+                        <video height="auto" autoplay muted loop poster="images/top2.jpg">
+                            <source src="video/video1.mp4" type="video/mp4"></source>
+                        </video>
+                    </div>   
+                    <div class="slider-top__content">
+                        <div class="wrapper-2">
+                            <div class="slider-top__top">
+                                <div class="slider-top__date">21 января, 19:00<br>четверг</div>
+                                <div class="slider-top__old">12+</div>
+                            </div>
+                            <h2 class="slider-top__title">Камерный театр Объединенного музея писателей Урала «Русалка»</h2>
+                            <a href="#" class="slider-top__button main-button">Купить билет</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-top__item swiper-slide">
+                    <div class="slider-top__image-container image-container" style="background-image: url(images/top2.jpg);">
+                        <img src="images/top2.jpg" alt="#" class="image-container__image">
+                    </div>
+                    <div class="slider-top__content">
+                        <div class="wrapper-2">
+                            <div class="slider-top__top">
+                                <div class="slider-top__date">21 января, 19:00<br>четверг</div>
+                                <div class="slider-top__old">12+</div>
+                            </div>
+                            <h2 class="slider-top__title">Камерный театр Объединенного музея писателей Урала «Русалка»</h2>
+                            <a href="#" class="slider-top__button main-button">Купить билет</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-top__num wrapper-2">
+                <div class="slider-top__slider-panel slider-panel">
+                    <div class="slider-top__arrow slider-panel__arrow arrow arrow_prev"><span class="icon-left-arrow"></span></div>
+                    <div class="slider-top__pag slider-panel__pag swiper-pagination"></div>
+                    <div class="slider-top__arrow slider-panel__arrow arrow arrow_next"><span class="icon-right-arrow"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!--
+    <section class="slider-top">
+        <div class="slider-top__container swiper-container">
+            <div class="swiper-wrapper">
+                <div class="slider-top__item swiper-slide">
+                    <div class="slider-top__image-container image-container" style="background-image: url(images/top2.jpg);">
+                        <img src="images/top2.jpg" alt="#" class="image-container__image">
+                    </div>
+                    <div class="slider-top__content">
+                        <div class="wrapper-2">
+                            <div class="slider-top__top">
+                                <div class="slider-top__date">21 января, 19:00<br>четверг</div>
+                                <div class="slider-top__old">12+</div>
+                            </div>
+                            <h2 class="slider-top__title">Камерный театр Объединенного музея писателей Урала «Русалка»</h2>
+                            <a href="#" class="slider-top__button main-button">Купить билет</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-top__item swiper-slide">
+                    <div class="slider-top__image-container image-container" style="background-image: url(images/top2.jpg);">
+                        <img src="images/top2.jpg" alt="#" class="image-container__image">
+                    </div>
+                    <div class="slider-top__content">
+                        <div class="wrapper-2">
+                            <div class="slider-top__top">
+                                <div class="slider-top__date">21 января, 19:00<br>четверг</div>
+                                <div class="slider-top__old">12+</div>
+                            </div>
+                            <h2 class="slider-top__title">Камерный театр Объединенного музея писателей Урала «Русалка»</h2>
+                            <a href="#" class="slider-top__button main-button">Купить билет</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-top__num wrapper-2">
+                <div class="slider-top__slider-panel slider-panel">
+                    <div class="slider-top__arrow slider-panel__arrow arrow arrow_prev"><span class="icon-left-arrow"></span></div>
+                    <div class="slider-top__pag slider-panel__pag swiper-pagination"></div>
+                    <div class="slider-top__arrow slider-panel__arrow arrow arrow_next"><span class="icon-right-arrow"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+
+    <section class="project section section_first">
+        <div class="wrapper">
+            <div class="main__body beveled beveled_left light-gray">
+                <img src="images/back1.png" alt="#" class="beveled__image beveled__image_top">
+                <article class="article">
+                    <h1 class="article__title title">Спектакль «Русалка»</h1>
+                    <p>Спектакль «Русалка» — первый творческий проект Региональной молодёжной Лаборатории театра и фольклора —с момента своей премьеры, прошедшей в Екатеринбурге 7 февраля 2020 года, обрел множество поклонников. </p>
+                    <h2>Сюжет</h2>
+                    <p>Сюжет спектакля, поставленного по одному из самых загадочных произведений Пушкина, дополнен фольклорными мотивами, народными песнями, танцами. В его основе — мифологический образ русалки. В старину люди верили, что в русалок превращаются девушки, утопившиеся из-за несчастной любви. Главная героиня поэмы — дочь мельника, которая не может смириться с тем, что ее возлюбленный женится на другой. Создатели спектакля «Русалка» взяли за основу драму Пушкина, черновики писателя, комментарии пушкинистов к произведению.</p>
+                    <hr>
+                    <p>– На драматической сцене этот спектакль обычно не ставят, поскольку «Русалка» — неоконченное произведение, — рассказывает режиссёр-постановщик Александр Фукалов. — Мы предлагаем свой собственный финал, в этом и заключается главная интрига нашей постановки.</p>
+                    <h2>Особенность</h2>
+                    <p>Постановку отличают захватывающая хореография, лаконичные и ясные сценографические решения и один из главных элементов — музыка, создающая необходимый национальный колорит и обращающая зрителя к истокам. За музыкальное решение спектакля отвечает художественный руководитель известной екатеринбургской фолк-группы «Солнцеворот» Анастасия Ведерникова. Она же выступила автором некоторых музыкальных номеров спектакля. Сам «Солнцеворот» становится неотъемлемой частью постановки, создавая уникальную атмосферу, в которую зритель погружается с первых минут. </p>
+                    <hr>
+                    <p>–  Пушкинский слог — сам по себе уже культурное наследие России. Темы, которые поднимаются в произведении, актуальны во все времена. Потому что это про людей, про человеческие страсти. А люди не меняются. Любовь, предательство, месть и даже мистика, основанная на фольклоре, — всё это есть в нашем спектакле. И это в частности про то, что нужно серьёзно относиться к своему выбору, поскольку твои поступки или проступки в дальнейшем могут очень сильно повлиять на всю твою жизнь, — говорит Максим Линников, художественный руководитель Лаборатории.</p>
+                    <h2>Актёры</h2>
+                    <p>В спектакле задействован прекрасный актёрский ансамбль, в котором сошлись и признанные мастера сцены — заслуженные артисты России Андрей Кылосов и Любовь Теплова, и молодые актёры Екатеринбурга Дарья Грешнова и Сергей Василейко. Вместе с ними — студенты театральных вузов. Ведь одна из главных целей Лаборатории — поддержка молодых талантливых актёров. </p>
+                    <div class="article__conclude conclude">
+                        <span>Важная особенность проекта — его социальная направленность: билеты распространяются бесплатно, и в театре могут побывать все желающие.</span>
+                    </div>
+                    <div class="article__info">
+                        <div class="article__info-left">
+                            <div class="article__info-item">
+                                <h3 class="article__info-title">Режиссёр-постановщик спектакля: </h3>
+                                <div class="article__info-text">Александр Фукалов</div>
+                            </div>
+                            <div class="article__info-item">
+                                <h3 class="article__info-title">Музыкальный руководитель: </h3>
+                                <div class="article__info-text">Анастасия Ведерникова</div>
+                            </div>
+                            <div class="article__info-item">
+                                <h3 class="article__info-title">Балетмейстер: </h3>
+                                <div class="article__info-text">Александра Николаева</div>
+                            </div>
+                            <div class="article__info-item">
+                                <h3 class="article__info-title">Продолжительность спектакля: </h3>
+                                <div class="article__info-text"><span class="article__info-icon icon-clock"></span>1 час 20 минут, без антракта</div>
+                            </div>
+                        </div>
+                        <div class="article__info-right">
+                            <div class="article__info-item">
+                                <h3 class="article__info-title">Художественный руководитель лаборатории: </h3>
+                                <div class="article__info-text">Максим Линников</div>
+                            </div>
+                            <div class="article__info-item">
+                                <h3 class="article__info-title">В ролях: </h3>
+                                <div class="article__info-text flex">Дарья Грешнова, Сергей Василейко, Полина Полицеймако, Андрей Кылосов, Любовь Теплова, Илья Ловкий, Настя Осинцева и другие</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <section class="video-block">
+                    <div class="video-block__image-container image-container" style="background-image: url(images/video.jpg);">
+                        <img src="images/video.jpg" alt="#" class="image-container__image">
+                    </div>
+                    <a data-fancybox href="https://youtu.be/DpBWUv_91ho" class="video-block__play icon-play"></a>
+                    <a data-fancybox href="https://youtu.be/DpBWUv_91ho" class="video-block__title">Промо ролик спектакля «Русалка»</a>
+                </section>
+
+                <section class="slider-photo">
+                    <div class="wrapper">
+                        <h2 class="title title_article">Фотогалерея</h2>
+                        <div class="slider-photo__container swiper-container">
+                            <div class="swiper-wrapper">
+                                <a data-fancybox="gallery" href="images/photo1.jpg" class="slider-photo__item swiper-slide">
+                                    <div class="slider-photo__image-container image-container" style="background-image: url(images/photo1.jpg);">
+                                        <img src="images/photo1.jpg" alt="#" class="image-container__image">
+                                    </div>
+                                </a>
+                                <a data-fancybox="gallery" href="images/photo2.jpg" class="slider-photo__item swiper-slide">
+                                    <div class="slider-photo__image-container image-container" style="background-image: url(images/photo2.jpg);">
+                                        <img src="images/photo2.jpg" alt="#" class="image-container__image">
+                                    </div>
+                                </a>
+                                <a data-fancybox="gallery" href="images/photo3.jpg" class="slider-photo__item swiper-slide">
+                                    <div class="slider-photo__image-container image-container" style="background-image: url(images/photo3.jpg);">
+                                        <img src="images/photo3.jpg" alt="#" class="image-container__image">
+                                    </div>
+                                </a>
+                                <a data-fancybox="gallery" href="images/photo1.jpg" class="slider-photo__item swiper-slide">
+                                    <div class="slider-photo__image-container image-container" style="background-image: url(images/photo1.jpg);">
+                                        <img src="images/photo1.jpg" alt="#" class="image-container__image">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider-photo slider-panel">
+                            <div class="slider-photo__arrow slider-panel__arrow arrow arrow_prev"><span class="icon-left-arrow"></span></div>
+                            <div class="slider-photo__pag slider-panel__pag swiper-pagination"></div>
+                            <div class="slider-photo__arrow slider-panel__arrow arrow arrow_next"><span class="icon-right-arrow"></span></div>
+                        </div> 
+                    </div>
+                </section>
+
+                <section class="reviews-photo">
+                    <div class="wrapper">
+                        <h2 class="title title_article">Отзывы</h2>
+                        <div class="reviews-photo__wrapper-arrow wrapper-arrow">
+                            <div class="reviews-photo__container swiper-container">
+                                <div class="swiper-wrapper">
+                                    <a data-fancybox="gallery" href="images/r/r1.jpg" class="reviews-photo__item swiper-slide">
+                                        <img src="images/r/r1.jpg" alt="#" class="reviews-photo__image">
+                                    </a>
+                                    <a data-fancybox="gallery" href="images/r/r2.jpg" class="reviews-photo__item swiper-slide">
+                                        <img src="images/r/r3.jpg" alt="#" class="reviews-photo__image">
+                                    </a>
+                                    <a data-fancybox="gallery" href="images/r/r3.jpg" class="reviews-photo__item swiper-slide">
+                                        <img src="images/r/r2.jpg" alt="#" class="reviews-photo__image">
+                                    </a>
+                                    <a data-fancybox="gallery" href="images/r/r4.jpg" class="reviews-photo__item swiper-slide">
+                                        <img src="images/r/r3.jpg" alt="#" class="reviews-photo__image">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="reviews-photo__arrow absolute arrow arrow_prev"><span class="icon-left-arrow"></span></div>
+                            <div class="reviews-photo__arrow absolute arrow arrow_next"><span class="icon-right-arrow"></span></div>
+                        </div>
+                        <div class="reviews-photo slider-panel">
+                            <div class="reviews-photo__pag slider-panel__pag swiper-pagination"></div>
+                        </div> 
+                    </div>
+                </section>
+                <img src="images/back2.png" alt="#" class="beveled__image beveled__image_bottom">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__top">
+                <a href="/" class="foote__logo logo">
+                    <img class="logo__image" src="images/logo.png" alt="Региональная молодёжная Лаборатория театра и фольклора" width="115" height="155">
+                </a>
+            </div>
+            <div class="footer__bottom">
+                © Все права защищены. «Лаборатория театра и фольклора», 2021
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>
