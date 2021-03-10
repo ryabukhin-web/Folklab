@@ -1,0 +1,199 @@
+._mob
+    display: none
+
+    &-f
+        display: none
+
+._nomob
+    display: block
+
+    &-f
+        display: flex
+    
+@media screen and ( max-width: 1600px )
+    .slider-top
+        &__content
+            .wrapper-2
+                & > *
+                    margin-left: 40px
+
+@media screen and ( max-width: 1200px )
+    .top-menu
+        &__link
+            font-size: 12px
+
+@media screen and ( max-width: 1040px )
+    ._mob
+        display: block
+
+        &-f
+            display: flex
+
+    ._nomob
+        display: none
+        
+        &-f
+            display: none
+
+    .header
+        .wrapper
+            position: static
+            
+        .wrapper-2
+            flex-wrap: wrap
+            justify-content: flex-start
+
+        &__colum
+            width: calc(50% - 20px)
+            flex-grow: initial
+
+            &._mob-f
+                justify-content: flex-start
+                align-items: center
+
+    .slider-top
+        &__video,
+        &__video video,
+        &__image-container::before
+            min-height: 740px
+
+        &__title
+            font-size: 28px
+
+    .top-menu
+        width: 40px
+        position: absolute
+        right: 0
+        z-index: 9999
+        margin: 0
+        top: 65px
+
+        .icon-menu
+            font-size: 33px
+
+            &::before
+                color: #fff
+
+        .sub-menu
+            opacity: 1
+            position: relative
+            background: none
+            margin: 0
+
+            a
+                color: #fff
+                padding: 11px 10px 15px 80px
+                font-weight: normal
+                width: auto
+
+        &__item
+            margin-right: 0
+         
+        &__button
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 8px 0
+            transition: all 0.3s
+
+            &:hover,
+            &:target
+                .icon-menu
+                    &::before
+                        color: #C098DB
+
+        .open
+            .top-menu__button
+                justify-content: flex-end
+                padding: 33px
+                font-size: 33px
+                color: #fff
+
+                &:hover,
+                &:active
+                    color: #C098DB
+
+        &__burger
+
+        &__list
+            display: block
+            position: fixed
+            top: 0
+            left: 0
+            background: #723C97
+            width: 100%
+            height: 100%
+            overflow: auto
+            left: -100%
+            transition: all 0.4s ease
+            z-index: 99999
+            text-align: center
+            overflow-y: auto
+
+            &.open
+                margin-top: 0
+                left: 0
+            
+        &__link
+            position: relative
+            display: block
+            padding: 15px 10px 15px 50px
+            margin-right: 0
+            text-align: left
+            font-size: 16px
+
+            &:hover
+                background: #0d0937
+
+            &:active
+                background: #0d0937
+
+    .poster-button
+        background: transparent
+
+        &::before,
+        &::after
+            background: transparent
+    
+@media screen and ( max-width: 850px )
+    .slider-top
+        &__num.wrapper-2
+            bottom: 50px
+
+        &__slider-panel
+            justify-content: flex-start
+
+        &__content .wrapper-2 > * 
+            margin-left: 0
+
+        &__title
+            font-size: 23px
+            line-height: 30px
+
+    .header .wrapper
+        padding: 30px 0 0 0
+
+    .network 
+        margin-left: 0
+        margin: 20px 0 20px 0
+        display: flex
+        justify-content: flex-end
+        width: 100%
+
+    .slider-top__video
+        min-height: 810px
+
+    .slider-top__title
+        margin: 30px 0 40px 0
+        
+    .slider-top__date
+        font-size: 16px
+
+    .slider-top__content
+        bottom: 120px
+
+    .slider-top
+        &__video,
+        &__video video,
+        &__image-container::before
+            min-height: 780px

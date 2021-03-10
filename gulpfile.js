@@ -11,8 +11,9 @@ const del           = require('del');
 function browsersync() {
     browserSync.init({
         server : {
-            baseDir: '.'
+            baseDir: 'Folklab_LK/.'
         }
+
     });
 }
 
@@ -31,13 +32,12 @@ function scripts() {
 
 function styles() {
     return src([
-        'node_modules/normalize.css/normalize.css',
-        'fonts/**/*.css',
-        'css/swiper-bundle.min.css',
-        'sass/base.sass'
+        //'node_modules/normalize.css/normalize.css',
+        'Folklab_LK/fonts/**/*.css',
+        'Folklab_LK/sass/base.sass'
     ])
             .pipe(sass({outputStyle: 'compressed'}))
-            .pipe(concat('style.css'))
+            .pipe(concat('Folklab_LK/style.css'))
             .pipe(autoprefixer({
                 overrideBrowserslist: ['last 15 version'],
                 grid: true
@@ -47,9 +47,8 @@ function styles() {
 }
 
 function watching() {
-    watch(['sass/**/*.sass', 'fonts/**/*.css'], styles);
-    watch(['js/**/*.js', '!js/main.min.js'], scripts);
-    watch(['*.html']).on('change', browserSync.reload);
+    watch(['Folklab_LK/sass/**/*.sass', 'Folklab_LK/fonts/**/*.css'], styles);
+    watch(['Folklab_LK/*.html']).on('change', browserSync.reload);
 }
 
 exports.styles = styles;

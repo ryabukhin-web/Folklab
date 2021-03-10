@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru" class="private-office">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация - Мастера театра и кино</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="logo-section logo-section_grey">
+        <div class="logo-section__logo logo">
+            <img src="images/logo.png" alt="Лаборатория театра и фольклдора" class="logo__image">
+        </div>
+        <div class="logo-section__title">
+            <div class="logo-section__title-text">Мастера театра и кино</div>
+        </div>
+        <div class="logo-section__pattern"></div>
+    </section>
+
+    <section class="form-panel form-panel__reg">
+        <div class="form-panel__wrapper">
+            <h2 class="form-panel__title">Регистрация</h2>
+            <form name="#" action="" method="post" class="form-panel__form">
+                <label class="form-panel__label">Ваше имя:</label>
+                <input name="name" class="form-panel__input" type="text" required>
+                
+                <label class="form-panel__label">Ваш E-mail:</label>
+                <input name="email" class="form-panel__input" type="text" required>
+
+                <label class="form-panel__label">Придумайте пароль:</label>
+                <input name="password" class="form-panel__input" type="password" required>
+
+                <input class="form-panel__custom-checkbox form-panel__custom-checkbox_grey" type="checkbox" id="agree" name="agree" value="agree" required>
+                <label for="agree" class="form-panel__label-check">Соглашаюсь с правилами обработки персональных данных</label>
+
+                <button type="submit" class="form-panel__button button button_purple">Зарегистрироваться</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="form-panel form-panel__auth">
+        <div class="form-panel__wrapper">
+            <h2 class="form-panel__title">Вход</h2>
+            <form name="#" action="" method="post" class="form-panel__form">
+                <label class="form-panel__label">Ваш E-mail:</label>
+                <input name="email" class="form-panel__input" type="text" required>
+
+                <label class="form-panel__label">Пароль:</label>
+                <input name="password" class="form-panel__input" type="password" required>
+
+                <input class="form-panel__custom-checkbox" type="checkbox" id="remember" name="remember" value="remember" required>
+                <label for="remember" class="form-panel__label-check">Запомнить меня на этом устройстве</label>
+
+                <button type="submit" class="form-panel__button button button_turquoise">Войти</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
